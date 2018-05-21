@@ -1,128 +1,168 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Websites</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Websites</title>
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/jquery.fullPage.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/jquery.fullPage.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
-</head>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
 
-<body class="loading">
-  <!--[if lt IE 10]>
+  <body class="loading">
+    <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <nav id="top-menu" class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-          aria-controls="navbar">
+    <nav id="top-menu" class="navbar navbar-fixed-top hidden">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Big Picture</a>
+          <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">Menu</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Intro</a></li>
-          <li><a href="#">What I Do</a></li>
-          <li><a href="#">Who I Am</a></li>
-          <li><a href="#">My Work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    </nav>
+
+    <div id="fullpage">
+
+      <div class="section" id="landing">
+        <div class="container content hero-section">
+          <header>
+            <h2 class="hero-title">Welcome To The Future Consumer Project</h2>
+          </header>
+          <p class="hero-desc">
+            PepsiCo's next horizon of growth will come from some of the world's most dynamic markets. This site is a window into those
+            markets to help us better understand the people and environments that are fundamental aspects of how we design
+            our business for the phase of growth.
+          </p>
+          <div class="actions-wrapper">
+            <button class="bordered-transparent-btn blue-border font-white">Download The Report</button>
+            <button class="bordered-transparent-btn red-border font-white">Watch The Video</button>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
 
-  <div id="fullpage">
-
-    <div class="section" id="landing">
-      <div class="container content">
-        <header>
-          <h2>Hey.</h2>
-        </header>
-        <p>Welcome to <strong>Big Picture</strong> a responsive site template designed by <a href="http://html5up.net">HTML5 UP</a>,
-          built on <a href="http://skeljs.org">skelJS</a>, and released for free under the <a href="http://html5up.net/license/">Creative Commons Attribution 3.0 license</a>.</p>
-        <footer>
-          <a href="#one" class="button down">More</a>
-        </footer>
+      <div class="content-section flex-row" id="cities">
+        <div class="content-block generic">
+          <p>Click On A City To Learn more</p>
+        </div>
+        <div class="content-block border-top-blue nigeria">
+          <div class="overlay"></div>
+          <p>Nigeria</p>
+        </div>
+        <div class="content-block border-top-white india">
+          <div class="overlay"></div>
+          <p>India</p>
+        </div>
+        <div class="content-block border-top-red mexico">
+          <div class="overlay"></div>
+          <p>Mexico</p>
+        </div>
       </div>
+
+      <div class="content-section flex-row">
+        <div class="content-desc-block border-top-red">
+          <label class="content-type-label">Video</label>
+          <label class="content-block-title">Through the eyes of our people</label>
+          <p class="content-desc">High potential markets through the eyes of our front-life staff</p>
+          <button class="bordered-transparent-btn">Watch The Video</button>
+        </div>
+        <div class="content-video-block"></div>
+      </div>
+
+      <div class="content-section flex-row">
+        <div class="content-video-block"></div>
+        <div class="content-desc-block border-top-blue">
+          <label class="content-type-label">Video</label>
+          <label class="content-block-title">Experience Markets Firsthand</label>
+          <p class="content-desc">Click on our VR experience and immerse yourself in the environments that make these markets unique.</p>
+          <button class="bordered-transparent-btn">Download The Experience</button>
+        </div>
+      </div>
+
+      <div class="content-section flex-row">
+        <div class="content-desc-block border-top-red">
+          <label class="content-type-label">Video</label>
+          <label class="content-block-title">Download The Presentation</label>
+          <p class="content-desc">Download slides about these high potential markets you can use in presentations. You can access slides about specific countries in the individual country sections.</p>
+          <button class="bordered-transparent-btn">Watch The Video</button>
+        </div>
+        <div class="content-video-block"></div>
+      </div>
+
+      <footer class="content-section flex-center">
+        <p>Dive into a specific market.</p>
+      </footer>
+
     </div>
 
-    <div class="section" id="what-i-do">
-
-    </div>
-
-    <div class="section" id="who-i-am">
-
-    </div>
-
-    <div class="section" id="my-work">
-
-    </div>
-
-    <div class="section" id="contact">
-
-    </div>
-
-  </div>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+        e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+      ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
     </script>
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="/bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:js scripts/plugins.js -->
-  <script src="/bower_components/bootstrap/js/affix.js"></script>
-  <script src="/bower_components/bootstrap/js/alert.js"></script>
-  <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-  <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-  <script src="/bower_components/bootstrap/js/modal.js"></script>
-  <script src="/bower_components/bootstrap/js/transition.js"></script>
-  <script src="/bower_components/bootstrap/js/button.js"></script>
-  <script src="/bower_components/bootstrap/js/popover.js"></script>
-  <script src="/bower_components/bootstrap/js/carousel.js"></script>
-  <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-  <script src="/bower_components/bootstrap/js/collapse.js"></script>
-  <script src="/bower_components/bootstrap/js/tab.js"></script>
-  <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap/js/affix.js"></script>
+    <script src="/bower_components/bootstrap/js/alert.js"></script>
+    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="/bower_components/bootstrap/js/modal.js"></script>
+    <script src="/bower_components/bootstrap/js/transition.js"></script>
+    <script src="/bower_components/bootstrap/js/button.js"></script>
+    <script src="/bower_components/bootstrap/js/popover.js"></script>
+    <script src="/bower_components/bootstrap/js/carousel.js"></script>
+    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap/js/collapse.js"></script>
+    <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/jquery.fullPage.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
-</body>
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/jquery.fullPage.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 
 </html>

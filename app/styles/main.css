@@ -98,8 +98,8 @@
 /* Top Menu                                                                       */
 /*********************************************************************************/
 #top-menu {
-  background: #fff;
-  background: rgba(255,255,255,0.95);
+  background: #000;
+  background: rgba(0, 0, 0, 0.95);
   box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
 }
 
@@ -125,7 +125,7 @@
 
 
 .section {
-  padding-top:100px;
+  padding-top:0px;
   padding-bottom:100px;
   position:relative;
   margin:0;
@@ -157,7 +157,25 @@
     text-indent: -10em;
     overflow: hidden;
     background-image: url('../images/dark-arrow.svg');
-  }
+	}
+
+.hero-section {
+	width: 45%;
+	margin: 0px;
+	margin-left: 8%;
+}
+
+.hero-title {
+	font-size: 1.45em;
+	letter-spacing: normal;
+	color: #fff;
+}
+
+.hero-desc {
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+}
 
 /*********************************************************************************/
 /* Intro                                                                         */
@@ -171,21 +189,152 @@
 }
 
 /*********************************************************************************/
-/* What I Do                                                                     */
+/* Generic                                                                      */
 /*********************************************************************************/
-#what-i-do {
-  background: url('../images/overlay.png'), url('../images/one.jpg');
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+.hidden {
+	display: none !important;
 }
 
-/*********************************************************************************/
-/* Who I Am                                                                      */
-/*********************************************************************************/
-#who-i-am {
-  background: url('../images/overlay.png'), url('../images/two.jpg');
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center center;
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-section {
+	height: 350px;
+}
+
+.content-block {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		background: rgb(23, 23, 23);
+		padding: 40px;
+		position: relative;
+	}
+	.content-block .overlay {
+		position: absolute;
+		background: rgba(255,255,255,0.3);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 0.5s ease;
+		opacity: 0;
+		z-index: 1;
+	}
+	.content-block .overlay:hover {
+		opacity: 1;
+	}
+	.content-block p {
+		color :#fff;
+		font-size: 16px;
+	}
+
+.content-desc-block {
+		display: flex;
+		flex: 3;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: #f1f1f1;
+		padding: 30px;
+	}
+	.content-desc-block .content-type-label {
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 14px !important;
+		margin-bottom: 10px;
+	}
+	.content-desc-block .content-block-title {
+		font-weight: 900;
+		font-size: 14px;
+		line-height: 16px !important;
+		margin-bottom: 10px;
+	}
+	.content-desc-block .content-desc {
+		font-size: 14px;
+		line-height: 18px !important;
+		margin-bottom: 20px;
+		text-align:center;
+	}
+
+.content-video-block {
+	display: flex;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+footer {
+	background: rgb(23, 23, 23);
+	color: #fff;
+}
+
+.font-white {
+	color: #fff !important;
+}
+
+.bordered-transparent-btn {
+		border: 1px solid #000;
+		padding: 10px 20px;
+		background: transparent;
+		font-size: 14px;
+		line-height: 16px;
+		color: #000;
+		transition: all 0.5s ease;
+		margin-right: 15px;
+	}
+	.bordered-transparent-btn:hover {
+		background: #000;
+		color: #fff;
+	}
+
+.blue-border {
+	border: 1px solid blue;
+}
+
+.red-border {
+	border: 1px solid red;
+}
+
+.border-top-blue {
+	border-top: 10px solid blue;
+}
+
+.border-top-white {
+	border-top: 10px solid #fff;
+}
+
+.border-top-red {
+	border-top: 10px solid red;
+}
+
+@media only screen and (max-width: 600px) {
+	.flex-row {
+		flex-direction: column;
+	}
+	.content-section {
+		height: 100%;
+	}
+	.content-block, .content-desc-block, .content-video-block {
+		height: 400px;
+	}
+	.hero-section {
+		width: 100%;
+		margin-left:0px;
+		padding: 50px;
+	}
+	footer.content-section {
+		height: 350px;
+	}
 }
